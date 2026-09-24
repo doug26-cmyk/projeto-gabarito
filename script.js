@@ -116,6 +116,8 @@ const cartItems = document.getElementById('cartItems');
 const cartSubtotal = document.getElementById('cartSubtotal');
 const cartCount = document.getElementById('cartCount');
 const cartPanel = document.getElementById('cartPanel');
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const chatForm = document.getElementById('chatForm');
 const chatInput = document.getElementById('chatInput');
@@ -298,6 +300,31 @@ function handleChatSubmit(event) {
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => filterProducts(button.dataset.filter));
 });
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = !mainNav.classList.contains('open');
+    mainNav.classList.toggle('open', isOpen);
+    menuToggle.classList.toggle('active', isOpen);
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.querySelectorAll('.main-nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) {
+      mainNav.classList.remove('open');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
 
 productsGrid.addEventListener('click', (event) => {
   const button = event.target.closest('[data-add-to-cart]');
