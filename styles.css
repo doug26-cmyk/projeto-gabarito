@@ -29,6 +29,7 @@ body {
     radial-gradient(circle at top left, rgba(138, 92, 246, 0.22), transparent 33%),
     linear-gradient(180deg, #0a0d16, #0e1321 35%, #0b0f1a 100%);
   color: var(--text);
+  overflow-x: hidden;
 }
 
 a {
@@ -818,6 +819,14 @@ img {
   .nav-actions {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .hero-copy {
+    width: 100%;
   }
 
   .support-inner {
