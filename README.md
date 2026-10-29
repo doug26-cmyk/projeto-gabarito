@@ -28,7 +28,7 @@ O fluxo não exige criação de conta. Cadastro, pedido e pagamento são apenas 
 ## Estrutura
 
 - `site/`: aplicação publicada pelo GitHub Pages.
-- `docs/`: escopo do portal e documentação do fluxo do usuário.
+- `docs/`: escopo, fluxo do usuário e [requisitos funcionais e não funcionais](docs/requisitos.md).
 - `.github/workflows/pages.yml`: publicação automática no GitHub Pages.
 
 ## Observações
