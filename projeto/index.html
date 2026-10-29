@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ec">
+  <meta name="description" content="Jogos de Português e Matemática para estudar para concursos no seu ritmo.">
+  <title>Gabarito — aprender jogando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Gabarito, página inicial" data-route="inicio">
+        <span class="brand-mark" aria-hidden="true">G</span><span>gabarito</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">&#9776;</button>
+      <nav class="nav" id="main-nav" aria-label="Navegação principal">
+        <button type="button" data-route="inicio">Início</button>
+        <button type="button" data-route="catalogo">Jogos</button>
+        <button type="button" data-route="concursos">Estudos concurso</button>
+        <button type="button" data-route="cadastro">Cadastro</button>
+        <button class="cart-link" type="button" data-route="carrinho">Carrinho <span class="cart-count" id="cart-count" aria-label="0 itens no carrinho">0</span></button>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ativar modo escuro" title="Ativar modo escuro">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 15.2A8.7 8.7 0 0 1 8.8 3.8 8.8 8.8 0 1 0 20.2 15.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="whatsapp-item"><a class="whatsapp-cta" id="whatsapp-cta" href="#whatsapp-status" title="Entre em contato conosco" aria-label="WhatsApp: entre em contato conosco">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.3L3 20l1.1-4.8a8.4 8.4 0 1 1 16.4-3.6Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.3 7.6c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.8 1.8c.1.3.1.5-.1.7l-.6.7c-.2.2-.2.4 0 .7.4.7 1.1 1.3 1.8 1.8.3.2.5.2.7 0l.7-.8c.2-.2.4-.3.7-.2l1.8.8c.3.1.4.3.4.5 0 .4-.2 1.2-.7 1.6-.5.4-1.1.6-1.7.5-.7-.1-1.7-.5-2.8-1.2a10.4 10.4 0 0 1-2.9-3.1c-.6-.9-.8-1.7-.8-2.2 0-.7.4-1.2.8-1.5Z" fill="currentColor"/>
+          </svg>
+        </a><span class="whatsapp-tooltip" role="tooltip">Entre em contato conosco</span></div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="app" aria-live="polite"></div>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p><strong>gabarito</strong> · Português e Matemática para avançar no seu ritmo.</p>
+      <a class="whatsapp-link" id="whatsapp-link" hidden target="_blank" rel="noopener noreferrer">Fale com a gente pelo WhatsApp</a>
+      <p class="whatsapp-status" id="whatsapp-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+      <p>Compras neste site são demonstrativas. Nenhum pagamento é processado.</p>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
