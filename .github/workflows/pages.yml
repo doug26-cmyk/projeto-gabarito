@@ -28,7 +28,7 @@ jobs:
       - name: Preparar arquivos do site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: projeto
+          path: site
       - name: Publicar site
         id: deployment
         uses: actions/deploy-pages@v4
