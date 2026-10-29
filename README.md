@@ -2,6 +2,10 @@
 
 Aplicação web educacional com jogos rápidos de Português e Matemática para apoiar a preparação para concursos. O projeto oferece desafios gratuitos e simulados demonstrativos em uma interface responsiva.
 
+## Acessar o site
+
+O site é publicado pelo GitHub Pages: [abrir Projeto Gabarito](https://doug26-cmyk.github.io/projeto-gabarito/).
+
 ## Funcionalidades
 
 - Catálogo de jogos com busca e filtros por matéria, faixa etária e escolaridade.
@@ -9,16 +13,6 @@ Aplicação web educacional com jogos rápidos de Português e Matemática para 
 - Área de estudos para concursos de nível médio e superior.
 - Cadastro demonstrativo, carrinho e fluxo de pedido sem processamento de pagamento.
 - Tema claro/escuro e preferência de tema salva no navegador.
-
-## Como executar
-
-Não é necessário instalar dependências. Com Python 3, inicie um servidor estático na raiz do repositório:
-
-```bash
-python3 -m http.server 8000
-```
-
-Abra [http://localhost:8000/projeto/](http://localhost:8000/projeto/) no navegador. Também é possível abrir `projeto/index.html` diretamente, embora o servidor local seja recomendado.
 
 ## Estrutura
 
