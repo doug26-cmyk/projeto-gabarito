@@ -1,9 +1,5 @@
 # Requisitos do sistema
 
-Este documento consolida os requisitos fornecidos nas imagens e os requisitos identificados nas funcionalidades da aplicação em `site/`. Os requisitos originais foram mantidos; requisitos adicionais descrevem comportamentos que já existem no protótipo.
-
-**Status:** Implementado = disponível no protótipo; Parcial = existe uma versão demonstrativa ou ainda não foi validado; Pendente = não implementado.
-
 ## Requisitos funcionais
 
 | ID | Requisito | Status |
@@ -23,8 +19,6 @@ Este documento consolida os requisitos fornecidos nas imagens e os requisitos id
 | RF13 | Ao finalizar a demonstração, o sistema deverá permitir selecionar uma forma de pagamento e mostrar uma referência, o resumo e a confirmação do pedido. | Implementado — sem cobrança ou pedido real |
 | RF14 | O sistema deverá permitir alternar entre tema claro e escuro e lembrar a preferência no mesmo navegador. | Implementado — armazenamento local |
 
-RF01–RF05 correspondem aos requisitos funcionais fornecidos nas imagens; RF06–RF14 foram identificados na análise do código do projeto.
-
 ## Requisitos não funcionais
 
 | ID | Requisito | Status |
@@ -35,8 +29,6 @@ RF01–RF05 correspondem aos requisitos funcionais fornecidos nas imagens; RF06�
 | RNF04 | O site deverá possuir uma interface de fácil utilização. | Parcial; há navegação, filtros e formulários identificados, mas não foi registrada avaliação de usabilidade |
 | RNF05 | O sistema deverá estar disponível 24 horas por dia. | Dependente da disponibilidade do GitHub Pages; não há SLA próprio ou monitoramento configurado |
 | RNF06 | A interface deverá oferecer suporte a tecnologias assistivas e navegação por teclado, com conteúdo semântico, rótulos e indicação de foco. | Parcial; há estrutura semântica, atributos ARIA e estilos de foco, mas não foi realizada auditoria completa de acessibilidade |
-
-RNF01–RNF05 correspondem aos requisitos não funcionais fornecidos nas imagens. RNF06 foi identificado na análise da marcação e dos estilos do projeto.
 
 ## Escopo e limitações
 
