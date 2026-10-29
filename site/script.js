@@ -4,7 +4,7 @@ const STORAGE_KEY = "gabarito-cart-v1";
 const THEME_STORAGE_KEY = "gabarito-theme-v1";
 const ageOptions = [
   { value: "15-17", label: "15 a 17 anos" },
-  { value: "18-25+", label: "18 anos ou mais" }
+  { value: "18-25+", label: "18+" }
 ];
 const paymentMethods = [
   { value: "pix", label: "Pix" },
@@ -314,7 +314,7 @@ const courseBannerImages = {
 };
 
 function gameCard(game) {
-  const ageText = game.ages.length === 2 ? "15–17 · 18–25+" : ageLabel(game.ages[0]);
+  const ageText = game.ages.length === 2 ? "15–17 · 18+" : ageLabel(game.ages[0]);
   const image = courseBannerImages[game.id] || "photo-1503676260728-1c00da094a0b";
   const owned = state.lastOrder?.ids?.includes(game.id);
   const action = game.paid
